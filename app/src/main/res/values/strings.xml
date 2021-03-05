@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <string name="inventory_tracking">Inventory Tracking</string>
+    <string name="app_new_name">SUPLINDO 88</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title">Title</string>
+    <string name="entry_item">Item Masuk</string>
+    <string name="entry_item_today">Item yang masuk hari ini</string>
+    <string name="item_out">Item Keluar</string>
+    <string name="item_out_today">Item yang keluar hari ini</string>
+    <string name="warehouse">Gudang</string>
+    <string name="all_items">Semua barang</string>
+    <string name="report">Laporan</string>
+    <string name="view_report">Lihat dan print laporan</string>
+    <string name="contact">Kontak</string>
+    <string name="list_contact">Daftar Kontak</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="item_name">Nama Barang</string>
+    <string name="barcode">Barcode</string>
+    <string name="item_count">Jumlah Barang</string>
+    <string name="description">Deskripsi</string>
+    <string name="add_image">Tambah Gambar</string>
+    <string name="delete_image">Hapus Gambar</string>
+    <string name="customer_name">Nama Customer</string>
+    <string name="search_item">Cari Barang</string>
+    <string name="contact_name">Nama Kontak</string>
+    <string name="phone_number">Nomor Handphone</string>
+    <string name="address">Alamat</string>
+    <string name="add_contact">Tambah Kontak</string>
+    <string name="add_item">Tambah Barang</string>
+</resources>
