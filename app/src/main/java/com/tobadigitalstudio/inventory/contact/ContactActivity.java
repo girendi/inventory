@@ -40,10 +40,8 @@ public class ContactActivity extends AppCompatActivity {
         database = AppDatabase.getInstance(this).contactDao();
 
         binding.rvWarehouse.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        adapter = new ContactListAdapter(this, listContact);
+        adapter = new ContactListAdapter(new ArrayList<>());
         binding.rvWarehouse.setAdapter(adapter);
-
-        getListContact();
     }
 
     @Override
@@ -53,7 +51,13 @@ public class ContactActivity extends AppCompatActivity {
     }
 
     private void getListContact(){
+        listContact.clear();
         listContact.addAll(database.readDataContact());
+        if (adapter == null){
+            adapter = new ContactListAdapter(listContact);
+        }else {
+            adapter.setContacts(listContact);
+        }
         adapter.notifyDataSetChanged();
     }
 

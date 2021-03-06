@@ -9,4 +9,6 @@
     <color name="colorGrey">#b5b5b5</color>
     <color name="black">#000000</color>
     <color name="red">#EB5757</color>
+    <color name="newGrey">#DADADA</color>
+    <color name="colorCCCCCC">#CCCCCC</color>
 </resources>

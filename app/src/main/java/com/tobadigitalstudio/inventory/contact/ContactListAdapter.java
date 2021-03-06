@@ -1,41 +1,41 @@
 package com.tobadigitalstudio.inventory.contact;
 
-import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tobadigitalstudio.inventory.R;
+import com.tobadigitalstudio.inventory.databinding.ItemListContactBinding;
 import com.tobadigitalstudio.inventory.models.Contact;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.ViewHolder> {
 
-    private Context context;
-    private ArrayList<Contact> contacts;
+    private List<Contact> contacts;
 
-    public ContactListAdapter(Context context, ArrayList<Contact> contacts) {
-        this.context = context;
+    public ContactListAdapter(List<Contact> contacts) {
         this.contacts = contacts;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_contact, parent, false);
-        return new ViewHolder(v);
+        ItemListContactBinding binding = DataBindingUtil.inflate(
+                LayoutInflater.from(parent.getContext()),
+                R.layout.item_list_contact, parent, false
+        );
+        return new ViewHolder(binding);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Contact contact = contacts.get(position);
-        holder.name.setText(contact.getName());
-        holder.phone.setText(contact.getAddress());
+        holder.binding.name.setText(contact.getName());
+        holder.binding.phone.setText(contact.getPhone());
     }
 
     @Override
@@ -44,11 +44,24 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView name, phone;
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            name = itemView.findViewById(R.id.name);
-            phone = itemView.findViewById(R.id.phone);
+
+        private ItemListContactBinding binding;
+
+        public ViewHolder(ItemListContactBinding mBinding) {
+            super(mBinding.getRoot());
+            binding = mBinding;
         }
+
+        public ItemListContactBinding getBinding() {
+            return binding;
+        }
+    }
+
+    public List<Contact> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
     }
 }

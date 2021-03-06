@@ -39,21 +39,46 @@
 
             <EditText
                 android:id="@+id/username"
-                android:layout_marginTop="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext_normal"
                 android:hint="@string/username"
+                android:textSize="12sp"
+                android:layout_marginTop="28dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColorHint="@color/colorCCCCCC"
+                android:drawablePadding="8dp"
+                android:imeOptions="actionGo|actionDone"
                 android:inputType="text"
-                android:background="@drawable/bg_edittext_normal"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"/>
+                android:padding="8dp"
+                android:singleLine="true"/>
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_marginTop="26dp"
-                android:hint="@string/password"
-                android:inputType="textPassword"
-                android:background="@drawable/bg_edittext_normal"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="54dp"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_visibility_gray_small_compound"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_edittext_normal"
+                    android:hint="@string/password"
+                    android:textSize="12sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColorHint="@color/colorCCCCCC"
+                    android:drawablePadding="8dp"
+                    android:imeOptions="actionGo|actionDone"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btnLogin"
