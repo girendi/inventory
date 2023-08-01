@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory.contact;
+package com.tobadigitalstudio.inventory.activity.contact;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;

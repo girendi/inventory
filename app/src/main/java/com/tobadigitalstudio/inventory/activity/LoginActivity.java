@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory;
+package com.tobadigitalstudio.inventory.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -8,21 +8,22 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.tobadigitalstudio.inventory.R;
+import com.tobadigitalstudio.inventory.activity.mainMenu.MainActivity;
 import com.tobadigitalstudio.inventory.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 
     private ActivityLoginBinding binding;
 
-    private final static String USERNAME = "user01";
-    private final static String PASSWORD = "admin001";
+    private final static String USERNAME = "user";
+    private final static String PASSWORD = "user";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login);
 
-        binding.btnLogin.setOnClickListener(view -> viewDashboard());
+        binding.btnLogin.setOnClickListener(view ->checkUserLogin());
     }
 
     private boolean isEmpty(){

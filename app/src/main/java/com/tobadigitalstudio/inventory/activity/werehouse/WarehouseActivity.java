@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory.werehouse;
+package com.tobadigitalstudio.inventory.activity.werehouse;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import com.tobadigitalstudio.inventory.R;
 import com.tobadigitalstudio.inventory.databinding.ActivityWerehouseBinding;
 
-public class WerehouseActivity extends AppCompatActivity {
+public class WarehouseActivity extends AppCompatActivity {
 
     private ActivityWerehouseBinding binding;
 

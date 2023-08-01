@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory.itemMasuk;
+package com.tobadigitalstudio.inventory.activity.itemMasuk;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
