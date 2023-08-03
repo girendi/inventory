@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory.werehouse;
+package com.tobadigitalstudio.inventory.activity.werehouse;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

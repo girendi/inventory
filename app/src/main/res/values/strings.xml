@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Inventory</string>
     <string name="inventory_tracking">Inventory Tracking</string>
-    <string name="app_new_name">SUPLINDO 88</string>
+    <string name="app_new_name">WarehouseWise</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>

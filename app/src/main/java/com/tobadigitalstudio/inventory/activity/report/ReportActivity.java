@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory.report;
+package com.tobadigitalstudio.inventory.activity.report;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -13,9 +13,9 @@ import android.view.View;
 import com.google.android.material.tabs.TabLayout;
 import com.tobadigitalstudio.inventory.R;
 import com.tobadigitalstudio.inventory.databinding.ActivityReportBinding;
-import com.tobadigitalstudio.inventory.report.fragments.AllReportFragment;
-import com.tobadigitalstudio.inventory.report.fragments.InComingFragment;
-import com.tobadigitalstudio.inventory.report.fragments.OutGoingFragment;
+import com.tobadigitalstudio.inventory.activity.report.fragments.AllReportFragment;
+import com.tobadigitalstudio.inventory.activity.report.fragments.InComingFragment;
+import com.tobadigitalstudio.inventory.activity.report.fragments.OutGoingFragment;
 
 import java.util.ArrayList;
 import java.util.List;

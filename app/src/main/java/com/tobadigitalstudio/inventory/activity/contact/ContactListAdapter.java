@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory.contact;
+package com.tobadigitalstudio.inventory.activity.contact;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;

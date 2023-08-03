@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory.report.fragments;
+package com.tobadigitalstudio.inventory.activity.report.fragments;
 
 import android.os.Bundle;
 

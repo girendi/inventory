@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".report.fragments.OutGoingFragment">
+    tools:context=".activity.report.fragments.OutGoingFragment">
 
     <RelativeLayout
         android:id="@+id/rcOutgoing"

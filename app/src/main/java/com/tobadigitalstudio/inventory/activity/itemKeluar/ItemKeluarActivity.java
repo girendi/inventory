@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory.itemKeluar;
+package com.tobadigitalstudio.inventory.activity.itemKeluar;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

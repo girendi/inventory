@@ -1,4 +1,4 @@
-package com.tobadigitalstudio.inventory;
+package com.tobadigitalstudio.inventory.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,15 +22,18 @@ public class SplashActivity extends AppCompatActivity {
         checkAndRequestPermissions();
     }
 
-    private boolean checkAndRequestPermissions() {
+    private void checkAndRequestPermissions() {
         permissionHelper.permissionListener(() -> {
-            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-            finish();
+            new Handler().postDelayed(
+                    () -> {
+                        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                        finish();
+                    }, 3000
+            );
         });
 
         permissionHelper.checkAndRequestPermissions();
 
-        return true;
     }
 
     @Override
